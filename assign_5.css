@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.top_bar {
+  padding: 5px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  justify-content: space-around;
+  background-color: lightgray;
+}
+.top_bar a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  width: 100vw;
+}
+.sec-top {
+  padding: 5px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.sec-top_left img{
+    width: 50px;
+}
+.sec-top_right {
+    padding-top:10px ;
+}
+
+.navbr{
+    text-align: center;
+}
+
+.navbr a{
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+.navbr input {
+    padding: 4px;
+    background-color: orangered;
+    color: white;
+    border-style:hidden
+}
+
+.main_1{
+
+    width: 100vw;
+    background-color: lightgray;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main_1_left{
+    width: 60vw;
+justify-items: left;    
+padding: 30px;
+
+
+}
+
+.main_1_right{
+    margin: auto;
+    padding: 30px;
+    width: 40vw;
+    /* background-color: blue; */
+}
+.main_1_right form{
+    padding: 0px;
+    margin: auto;
+    width: 400px;
+}
+.main_1_right div,input,textarea{
+    margin: 2px;
+}
+
+.main_1_right form input,textarea{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.main_1_right_btn {
+    padding: 4px;
+    background-color: orangered;
+    color: white;
+    border-style:hidden;
+    width: 336px;
+}
+.main_1_left1_btn{
+    padding: 4px;
+    background-color: orangered;
+    color: white;
+    border-style:hidden;
+    width: 120px;
+    border-radius: 10px;
+
+}
+
+.main_2{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+justify-content: right;
+    background-color: rgb(12, 139, 218);
+    color: white;
+}
+.main_2_left{
+    padding: 30px;
+    width: 80vw;
+    justify-items: center;
+}
+
+
+.main_2_right{
+    padding: 30px;
+
+    width: 20vw;
+    margin: auto auto;
+}
+.main_2_right input{
+    color:rgb(12, 139, 218);
+    background-color: white;
+    border-style: hidden;
+    width: 150px;
+    height: 25px;
+}
