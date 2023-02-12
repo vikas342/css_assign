@@ -29,6 +29,10 @@ nav img {
   color: white;
   padding: 20px;
 }
+.navbar a:hover{
+    text-decoration: underline;
+}
+
 .main_section{
     padding: 20px;
     height: 30vw;
