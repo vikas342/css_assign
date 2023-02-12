@@ -1,0 +1,49 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(51, 49, 49);
+}
+nav img {
+  padding: 10px;
+  width: 100px;
+}
+.logo {
+  width: 30vw;
+  margin: auto;
+}
+.navbar {
+  margin: auto;
+  /* background-color: aqua; */
+  width: 60vw;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+.main_section{
+    padding: 20px;
+    height: 30vw;
+    margin: auto;
+    width: 70vw;
+    /* background-color: aqua; */
+}
+.main {
+  color: white;
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+  width: 50vw;
+  background-color: rgb(62, 60, 60);
+}
+.main img {
+  width: 200px;
+}
