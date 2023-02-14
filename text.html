@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+
+        }
+        .container{
+            background-color: blueviolet;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+        }
+        .right{
+            background-color: #742c2c;
+
+            flex: 50%;
+        }
+        .left{
+            background-color: #d68282;
+            
+            flex:50%
+
+        }
+      
+     @media only screen and (max-width:800px){
+       .container{
+        flex-direction: column;
+       }
+     }
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+
+        <div class="left">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, exercitationem. Recusandae repellendus inventore ipsa quaerat? Voluptatibus placeat earum voluptates quo animi? Eos dignissimos beatae obcaecati culpa totam in, quis excepturi.</p>
+
+        </div>
+
+
+        <div class="right">
+
+            <input type="button" value="Design Now"> 
+        </div>
+    </div>
+    
+</body>
+</html>

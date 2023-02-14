@@ -5,14 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+    <title>Css Day2 A1</title>
     <link rel="stylesheet" href="assign_6.css">
     <style>
-        *{
-            overflow:hidden;
-
+       
+        .right{
+            width: 80%;
+            height: 90%;
         }
+
+     *{
+            overflow: hidden;
+        } header{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+            color: white;
+            padding: 30px;
+            justify-content: space-around;
+        }
+        footer{
+            background-color: black;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            margin-top:10px;
+        }
+
+        nav .navbar a{
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .img{
+            border-radius: 150px;
+            width: 100px;
+        }
+
     </style>
+   
 </head>
 
 <body>
@@ -108,13 +139,17 @@
 
         </div>
         <div class="right">
-
-            <div class="imglogo">
-
-                <img src="CSS3_logo.png" alt="Html5">
-            </div>
-
-           
+            <header>
+                <img class="img" src="logo.png" alt="logo" />
+                <nav class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
+            <footer>
+        footer
+            </footer>
 
 
         </div>
