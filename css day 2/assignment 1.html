@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{ 
+          
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: rgb(120, 120, 231);
+            width: 100vw;
+
+
+        }
+        .navbr{
+            width: 80vw;
+            padding: 30px;
+
+
+        }
+        .navbr a{
+
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            margin: 0px;
+        }
+        img{
+            width: 100px;
+        }
+        .navbr a:hover{
+            background-color: lightblue;
+        }
+        /* ul{
+            display: flex;
+            list-style-type: none;
+        }
+         */
+
+         @media only screen and(max-width:900px){
+            nav .navbr {
+                width: 100%;
+            }
+            nav .navbr a{
+                display: block;
+            }
+         }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="">
+        <nav class="navbr">
+
+            <!-- <ul>
+                <li>  <a href="#">home</a></li>
+                <li>  <a href="#">home</a></li>
+                <li>  <a href="#">home</a></li>
+                <li>  <a href="#">home</a></li>
+
+            </ul> -->
+            <a href="#">Home</a>
+
+            <a href="#">About Us</a>
+
+            <a href="#">Contact Us</a>
+            <a href="#">Inquiry</a>
+
+          
+            
+
+        </nav>
+
+    </div>
+    
+</body>
+</html>

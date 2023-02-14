@@ -1,193 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css A1</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css a1</title>
-    <link rel="stylesheet" href="assign_6.css">
     <style>
-        hr{
-            border-style: dotted;
-            border-bottom-style: none;
-            border-color: grey;
-            border-spacing: 5px;
-        border-width: 5px;
-        
+      #bd {
+        margin: 0;
+        padding: 0;
       }
-      
-      
-      
-      main section {
-          border: 5px solid black;
-          border-radius: 10px;
-        }
-        .right{
-            width: 80%;
-            height: 90%;
-        }
 
-      .one {
-        /* background-color: rgb(194, 87, 25); */
-        width: 900px;
-        height: 900px;
-        border: 2px solid black;
-        margin: auto;
+      .navbar {
+        position: sticky;
+        display: flex;
+        width: 100vw;
+font-size: larger;
+        justify-content: space-around;
       }
-      .two {
-        /* background-color: blue; */
-        width: 900px;
-        height: 180px;
-        background-color: #1b263b;
-        color: white;
+  *{
+        overflow-x: hidden;
       }
-      .three {
-        padding: 25px;
-        height: 670px;
-        /* background-color: rgb(53, 165, 31); */
-        background-color: #edf6f9;
-      }*{
-            overflow: hidden;
-        }
+      .logo {
+        display: flex;
+      }
 
-      table tr td {
-        padding-left: 50px;
+      .btns {
+        display: flex;
       }
-      table img {
-        border-radius: 5px;
+
+      .btns ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
       }
-      .tbl1 {
-        width: 100%;
-        margin: auto;
-      }
-      .tbl2 {
-        width: 100%;
-        margin: auto;
-      }
-      h3{
-        text-transform: uppercase;
-      }
-      h4 a{
-        color: white;
+
+      .btns a {
         text-decoration: none;
+        color: black;
+      }
+      .btns a:hover{
+text-decoration: underline;      }
+
+      .banner {
+        width: 100vw;
+
+        height: 100vh;
+      }
+
+      .menu {
+        border: 1px solid white;
+        border-radius: 10px;
+        position: absolute;
+
+        width: 500px;
+        height: 500px;
+        color: white;
+        top: 300px;
+        right: 300px;
+        background-image: url("light-gray-blur-template-vector.jpg");
+      }
+
+      .tbl {
+        margin: auto;
+        width: 400px;
+      }
+
+      .menu h3 {
+        text-align: center;
+      }
+
+      .menu form {
+        font-size: 25px;
+      }
+
+      .footer {
+        margin: 0px;
+        width: 100vw;
+        height: 50px;
+        background-color: grey;
+      }
+
+      .footer ul {
+        margin: 0px;
+        list-style: none;
+      }
+
+      .footer li {
+        margin: 0;
+
+        display: inline-block;
+        padding-right: 10px;
+      }
+
+      a {
+        color: black;
+      }
+
+      .bottom {
+        padding: 10px;
+        width: 100%;
+        height: 400px;
+        /* background-color: aqua; */
+      }
+
+      .left {
+        display: inline-block;
+        position: absolute;
+        width: 40%;
+        height: 400px;
+        /* border: 1px solid black; */
+        /* background-color: rgb(68, 148, 43); */
+      }
+
+      .left img {
+        width: 100%;
+        height: 400px;
+      }
+
+      .right {
+        margin: 10px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        width: 60%;
+        height: 400px;
+        /* border: 1px solid black; */
+        /* background-color: rgb(199, 127, 19); */
+      }
+
+      .right p {
+        padding: 50px;
+        text-align: justify;
+      }
+      .right h3{
+        text-align: center;
       }
     </style>
-   
-</head>
+  </head>
 
-<body>
-
-    <nav>
-        <div class="logo">
-            <img src="radixweb.png" alt="llogo">
-
-
-        </div>
-        <div class="navbar">
-
-            <a href="Assignment_6.html">Home</a>
-            <a href="html.html">Html</a>
-            <a href="css.html">CSS</a>
-            <a href="#">Bootstrap</a>
-            <a href="#">JavaScript</a>
-            <a href="#">JQuery</a>
-            <a href="#">Mini Project</a>
-            <a href="#">SQL</a>
-
-
-
-
-        </div>
+  <body id="bd">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo1.png" alt="logo" width="70" />
+      </div>
+      <div class="btns">
+        <ul>
+          <li>
+            <a href="#"> Home </a>
+          </li>
+          <li>
+            <a href="#"> About Us </a>
+          </li>
+          <li>
+            <a href="#"> Contact Us </a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <main class="html_main">
+    <main>
+      <section>
+        <img
+          class="banner"
+          src="sven-mieke-MsCgmHuirDo-unsplash.jpg"
+          alt="banner"
+        />
+        <div class="menu">
+          <h3>Fill Form For Inquiry</h3>
 
-        <div class="left">
+          <form action="">
+            <table class="tbl">
+              <tr>
+                <td>
+                  <label for="name">Your Name: </label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="name"
+                    name="e_name"
+                    placeholder="eg. vikas sonwane"
+                    required
+                  />
+                </td>
+              </tr>
 
-            <ul>
-                <li>Day 4
+              <tr>
+                <td>
+                  <label for="email">Your Email : </label>
+                </td>
+                <td>
+                  <input
+                    type="email"
+                    id="email"
+                    name="e_email"
+                    placeholder="XYZ@gmail.com"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="e_phone">Phone : </label>
+                </td>
+                <td>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="e_phone"
+                    placeholder="91 9857899556"
+                    required
+                  />
+                </td>
+              </tr>
 
-                    <ul>
-                        <li>Assignment
-                            <ul>
-                                <li><a href="#">Assignment 1</a></li>
-                                <li><a href="#">Assignment 2</a></li>
-                                <li><a href="#">Assignment 3</a></li>
+              <tr>
+                <td>
+                  <label for="e_age"> Age : </label>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="age"
+                    id="e_age"
+                    placeholder="eg. 21"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Gender:</td>
+                <td>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="e_gender"
+                    value="Male"
+                  />
+                  Male
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="e_gender"
+                    value="Female"
+                  />
+                  Female
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="e_location">Location : </label>
+                </td>
+                <td>
+                  <select name="location" id="e_location">
+                    <option selected disabled value="">
+                      plese select city
+                    </option>
 
-                            </ul>
-                        </li>
-                        <li>Practice
+                    <option value="ahmedabad">Ahmedabad</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="banglore">Banglore</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="e_designation">Designation : </label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="designation"
+                    id="e_designation"
+                    placeholder="eg. engineer"
+                    required
+                  />
+                </td>
+              </tr>
 
-                            <ul>
-                                <li><a href="#">Practice 1</a></li>
-                                <li><a href="#">Practice 2</a></li>
-                                <li><a href="#">Practice 3</a></li>
-                                <li><a href="#">Practice 4</a></li>
+              <tr>
+                <td>
+                  <label for="e_doj">Date of Joining :</label>
+                </td>
+                <td>
+                  <input type="date" name="doj" id="e_doj" required />
+                </td>
+              </tr>
 
-
-                            </ul>
-
-                        </li>
-                    </ul>
-
-
-                </li>
-
-                <li>Day 5
-
-                    <ul>
-                        <li>Assignment
-                            <ul>
-                                <li><a href="#">Assignment 1</a></li>
-                                <li><a href="#">Assignment 2</a></li>
-                                <li><a href="#">Assignment 3</a></li>
-
-                            </ul>
-                        </li>
-                        <li>Practice
-
-                            <ul>
-                                <li><a href="#">Practice 1</a></li>
-                                <li><a href="#">Practice 2</a></li>
-                                <li><a href="#">Practice 3</a></li>
-                                <li><a href="#">Practice 4</a></li>
-
-
-                            </ul>
-
-                        </li>
-                    </ul>
-
-
-                </li>
-
-
-
-
-            </ul>
-
+              <tr>
+                <td>
+                  <input type="submit" />
+                </td>
+                <td>
+                  <input type="reset" />
+                </td>
+              </tr>
+            </table>
+          </form>
         </div>
-        <div class="right">
-
-            <header>
-                <img class="img" src="logo.png" alt="logo" />
-                <nav class="navbar">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </header>
-            <footer>
-        footer
-            </footer>
-
-        </div>
+      </section>
     </main>
+   
 
+    <div class="bottom">
+      <div class="right">
+        <h3>About us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet
+          animi beatae provident aliquid rem nostrum assumenda possimus laborum
+          nisi, dignissimos sapiente at repudiandae ipsa excepturi nemo esse?
+          Ipsa, quaerat. Accusantium, maiores ex? Vitae modi quisquam velit
+          ducimus nam quaerat enim vero dolor aperiam, id quia at illum
+          quibusdam, reprehenderit ullam ut delectus commodi ea ad libero
+          reiciendis error laudantium? Ullam magni ex culpa? Repellat quas
+          quibusdam impedit nulla ipsum nihil a laborum natus voluptas explicabo
+          voluptatum cumque nam molestiae ab libero obcaecati dolore, delectus
+          non similique maxime dolorum omnis. Distinctio tenetur, quis
+          perferendis excepturi assumenda blanditiis, tempore sapiente aut
+          deserunt unde laudantium vel sunt eos fugit ut nesciunt impedit!
+          Facilis voluptas nemo, ducimus vero ut vel pariatur. Non, et? Delectus
+          veniam et sint officiis officia at odio ut totam culpa? Veniam qui
+           possimus! Odit saepe voluptatum
+          maxime doloribus consequatur ad praesentium et accusamus officiis
+          sapiente perferendis cupiditate adipisci assumenda nobis dignissimos
+          ab illo, deserunt eos! Doloremque, delectus nulla? Harum cupiditate
+          laudantium sit alias, enim, ue cupiditate quam
+          laborum distinctio placeat fugiat. Nostrum dolorum quas velit
+          doloribus. Excepturi perferendis et mollitia aperiam quo. Ullam, velit
+          fuga explicabo quaerat placeat maxime iste!
+        </p>
+      </div>
 
-
-
-</body>
-
+      <div class="left" style="overflow-y: hidden;">
+        <img src="gyn3.webp" alt="img" >
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>Author: vikas sonwane<br /></p>
+        <ul>
+          <li>
+            <a href="#"> Home </a>
+          </li>
+          <li>
+            <a href="#"> About Us </a>
+          </li>
+          <li>
+            <a href="#"> Contact Us </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

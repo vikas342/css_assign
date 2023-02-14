@@ -14,9 +14,7 @@
             height: 90%;
         }
 
-     *{
-            overflow: hidden;
-        } header{
+     header{
             display: flex;
             flex-wrap: wrap;
             background-color: black;
@@ -32,7 +30,11 @@
             margin-top:10px;
         }
 
-        nav .navbar a{
+        .right ._navbar{
+            display: flex;
+            flex-direction: row;
+        }
+        nav ._navbar a{
             color: white;
             padding: 10px;
             text-decoration: none;
@@ -40,6 +42,16 @@
         .img{
             border-radius: 150px;
             width: 100px;
+        }
+        .right ._navbar{
+            width: 50% ;
+        }
+        @media only screen and(max-width:900px){
+
+            .right nav._navbar a{
+                display: block;
+            }
+
         }
 
     </style>
@@ -50,11 +62,11 @@
 
     <nav>
         <div class="logo">
-            <img src="radixweb.png" alt="llogo">
+            <img src="radixweb.png" alt="logo">
 
 
         </div>
-        <div class="navbar">
+        <div class="navbar" style="overflow-y: hidden;">
 
             <a href="Assignment_6.html">Home</a>
             <a href="html.html">Html</a>
@@ -140,8 +152,8 @@
         </div>
         <div class="right">
             <header>
-                <img class="img" src="logo.png" alt="logo" />
-                <nav class="navbar">
+                <img class="img" src="logo1.png" alt="logo" />
+                <nav class="navbar _navbar">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#contact">Contact</a>
